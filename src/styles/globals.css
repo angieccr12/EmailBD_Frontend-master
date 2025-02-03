@@ -1,0 +1,43 @@
+/*src\styles\globals.css*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&display=swap');
+
+/* Variables globales */
+:root {
+  /* Colores */
+  --primary-color: #27445D;
+  --secondary-color: #497D74;
+  --accent-color: #9cc0bb;
+  --background-color: #f4fdff;
+  --text-color: #3D3D3D;
+
+  /* Tamaños de fuente */
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+  --font-xxl: 32px;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1E1E1E;
+    --text-color: #E0E0E0;
+  }
+}
+
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-md);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

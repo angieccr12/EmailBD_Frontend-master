@@ -1,0 +1,129 @@
+/*src\styles\Folder.css*/
+.folder-container {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.folder-title {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-lg);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.folder-icon {
+    margin-right: 8px;
+    font-size: var(--font-xl);
+}
+
+.loading, .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-md);
+    margin-top: 10px;
+    color: var(--error-color);
+}
+
+.icon-spin {
+    animation: spin 1s linear infinite;
+    font-size: var(--font-lg);
+    margin-right: 5px;
+}
+
+.email-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.delete-btn, .category-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-md);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delete-btn:hover {
+    background-color: var(--danger-color);
+}
+
+.category-btn:hover {
+    background-color: var(--warning-color);
+}
+
+.email-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.email-item {
+    display: grid;
+    grid-template-columns: 40px 30px 1fr 2fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.email-item:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.email-item input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.email-icon {
+    font-size: var(--font-lg);
+    color: var(--primary-color);
+}
+
+.email-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.email-subject {
+    font-weight: bold;
+    font-size: var(--font-md);
+}
+
+.email-date {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.email-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    padding: 10px;
+    font-size: var(--font-md);
+}
+
+/* Animación de carga */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

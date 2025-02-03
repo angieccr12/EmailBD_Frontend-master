@@ -1,0 +1,85 @@
+/*src\styles\NewEmail.css*/
+.new-email {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .btn-opcion {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-opcion.active {
+    background-color: #2980b9;
+  }
+  
+  .btn-enviar {
+    display: flex;
+    align-items: center;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .btn-label {
+    background: transparent;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .input-asunto, .input-mensaje, .field-group input, .field-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .destinatarios-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .destinatario-item {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .icon-delete {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .adjuntos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .adjuntos li {
+    margin: 5px 0;
+  }
+  

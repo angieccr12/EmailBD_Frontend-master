@@ -1,0 +1,60 @@
+/*src\styles\SideBar.css*/
+.sidebar {
+    width: 250px;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .compose-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-md);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .compose-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .folder-section {
+    margin-top: 15px;
+  }
+  
+  .folder-header {
+    font-size: var(--font-md);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    color: var(--text-color);
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: var(--font-md);
+  }
+  
+  li:hover {
+    color: var(--primary-color);
+  }
+  

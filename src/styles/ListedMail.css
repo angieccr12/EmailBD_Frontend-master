@@ -1,0 +1,46 @@
+/*src\styles\ListedMail.css*/
+.listed-mail {
+    display: grid;
+    grid-template-columns: 40px 30px 1fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    background-color: var(--background-color);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .listed-mail:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .mail-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .mail-icon {
+    font-size: var(--font-lg);
+    color: var(--primary-color);
+  }
+  
+  .mail-sender, .mail-subject, .mail-date, .mail-recipient, .mail-cco {
+    padding: 5px;
+    font-size: var(--font-md);
+  }
+  
+  .mail-sender {
+    font-weight: bold;
+  }
+  
+  .mail-date {
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .mail-cco {
+    color: var(--secondary-color);
+    font-style: italic;
+  }
+  
