@@ -13,8 +13,10 @@ const Folder = ({ folderName }) => {
     useEffect(() => {
         const fetchEmails = async () => {
             try {
-                const response = await axios.get(`/api/folders/${folderName}/emails`);
-                setEmails(response.data);
+                //TODO: Descomentar cuando ya se tenga la API
+                // const response = await axios.get(`/api/folders/${folderName}/emails`);
+                // setEmails(response.data);
+                
             } catch (err) {
                 setError("Error loading emails");
                 console.error(err);
@@ -67,7 +69,7 @@ const Folder = ({ folderName }) => {
                             </button>
                         </div>
                     )}
-
+                    
                     <ul className="email-list">
                         {emails.length === 0 ? (
                             <li className="email-empty">

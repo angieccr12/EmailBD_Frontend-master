@@ -18,7 +18,7 @@ const SideBar = ({ onSelectFolder }) => {
 
   return (
     <div className="sidebar">
-      <button className="compose-btn">
+      <button className="compose-btn" onClick={() => onSelectFolder("Redactar")}>
         <FaPlus /> Redactar
       </button>
 

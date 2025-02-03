@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AiOutlineSend, AiOutlineUser, AiOutlinePaperClip, AiOutlineClose } from 'react-icons/ai';
 import '../styles/NewEmail.css';
-import SideBar from './SideBar';
-import NavBar from './NavBar';
 
 const NewEmail = () => {
     const [asunto, setAsunto] = useState('');
@@ -78,9 +76,7 @@ const NewEmail = () => {
 
     return (
         <div className="layout">
-            <SideBar />
             <div className="content">
-                <NavBar />
                 <div className="new-email">
                     <div className="btn-group">
                         <button className={`btn-opcion ${opcion === 'Enviar' ? 'active' : ''}`} onClick={() => setOpcion('Enviar')}>
